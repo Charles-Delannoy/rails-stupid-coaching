@@ -1,1 +1,13 @@
-<h1>Answer page</h1>
+<h1>Stupid Coaching</h1>
+
+<div class="my-question">
+  <%= params['question'] %>
+  <p>-You</p>
+</div>
+
+<div class="coach-response">
+  <%= @response %>
+  <p>-Your coach</p>
+</div>
+
+<%= link_to 'Ask something', '/ask' %>
